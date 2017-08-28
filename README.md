@@ -37,3 +37,7 @@
 ```
 
 - URL to refresh the Properties: `http://localhost:8082/application/refresh` (POST)
+
+## Issues:
+
+-  Client app property files `application.properties` or `application-local.properties` cannot be used if properties are fetched with config server configuration
