@@ -12,13 +12,13 @@ public class MessageRestController {
     @Value("${project.sample.name:Default Name}")
     private String appName;
 
-    @Value("${sample.message:Default Message}")
+    @Value("${config.sample.message}")
     private String message;
 
-    @Value("${oracle.url:Default Oracle URL}")
+    @Value("${vault.oracle.url")
     private String oracleUrl;
 
-    @Value("{eventstore.url: Default Eventstore URL")
+    @Value("{vault.eventstore.url")
     private String eventUrl;
 
     @RequestMapping("/get-app-name")

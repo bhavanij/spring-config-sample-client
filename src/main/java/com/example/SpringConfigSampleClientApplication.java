@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringConfigSampleClientApplication {
 
-	@Value("${client.oracle.url: DEF_ORA_URL}")
+	@Value("${vault.oracle.url}")
 	private String oracleUrl;
 
-	@Value("${client.eventstore.url: DEF_EVT_URL}")
+	@Value("${vault.eventstore.url}")
 	private String eventstoreUrl;
 
-	@Value("${sample.message:Default Message}")
+	@Value("${config.sample.message}")
 	private String message;
 
 	public static void main(String[] args) {
